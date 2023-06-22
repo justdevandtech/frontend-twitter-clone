@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = ({ showBackArrow, label }) => {
   const navigate = useNavigate();
 
   const handleBack = useCallback(() => {
-    return navigate('/home');
+    return navigate('/');
   }, []);
 
   return (
