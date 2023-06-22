@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -10,8 +10,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Navigate to="/home" />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/posts/:postId" element={<Post />} />
         <Route path="/users/:userId" element={<UserProfile />} />
         <Route path="/notifications" element={<Notification />} />
